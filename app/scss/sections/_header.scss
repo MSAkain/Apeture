@@ -1,0 +1,159 @@
+.header {
+	margin-bottom: 120px;
+
+	&__top {
+		padding: 20px 0;
+		background-color: $bg;
+	}
+
+	&__inner {
+		display: flex;
+		justify-content: space-between;
+		align-items: center;
+
+	}
+
+	&__box {
+		display: flex;
+		justify-content: space-between;
+		max-width: 700px;
+		width: 100%;
+		align-items: center;
+	}
+
+	&__list {
+		display: flex;
+		justify-content: space-between;
+	}
+
+	&__item {
+
+		&:not(:last-child) {
+			margin-right: 32px;
+		}
+	}
+
+	&__link {
+		padding-bottom: 2px;
+		position: relative;
+
+
+		&::before {
+			content: '';
+			position: absolute;
+			border-bottom: 1px solid $white;
+			width: 0;
+			bottom: 0;
+			transition: width 0.5s ease-in;
+		}
+
+		&:hover {
+			&::before {
+				width: 100%;
+			}
+		}
+	}
+
+	&__button {
+		max-width: 155px;
+		width: 100%;
+		background-color: $white;
+		color: $black;
+		font-size: 16px;
+		border-radius: 14px;
+		padding: 9px 20px 13px 20px;
+		text-align: center;
+	}
+
+	&__hero {
+		background-repeat: no-repeat;
+		background-size: cover;
+		height: 91vh;
+		display: flex;
+		align-items: flex-end;
+		justify-content: center;
+		position: relative;
+	}
+
+	&__content {
+		text-align: center;
+		margin-bottom: 70px;
+	}
+
+	&__subtitle {
+		text-transform: uppercase;
+		letter-spacing: 2px;
+	}
+
+	&__title {
+		margin-bottom: 18px;
+		font-size: 54px;
+		font-weight: 400;
+		color: $white;
+	}
+
+	&__text {
+		max-width: 580px;
+		margin: 0 auto;
+	}
+
+	&__info {
+		position: absolute;
+		right: 40px;
+		bottom: 40px;
+	}
+}
+
+.info {
+	display: flex;
+	align-items: center;
+	max-width: 300px;
+	width: 100%;
+
+
+	&__item {
+		padding-left: 6px;
+		position: relative;
+		font-size: 12px;
+		width: 100%;
+
+		&:not(:last-child) {
+			margin-right: 32px;
+		}
+
+		&::before {
+			content: '';
+			position: absolute;
+			bottom: 0;
+			background-repeat: no-repeat;
+			height: 16px;
+			width: 16px;
+		}
+
+		&--time::before {
+			background-image: url('../images/icons/time.svg');
+			left: -16px;
+		}
+
+		&--f::before {
+			background-image: url('../images/icons/reverse.svg');
+			left: -16px;
+		}
+
+		&--iso {
+			max-width: 22px;
+		}
+
+		&--iso::before {
+			width: 32px;
+			background-image: url('../images/icons/iso.svg');
+			left: -32px;
+		}
+
+		&--location::before {
+			width: 10px;
+			background-image: url('../images/icons/point.svg');
+			left: -10px;
+		}
+	}
+}

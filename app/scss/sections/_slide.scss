@@ -1,0 +1,22 @@
+.slide {
+
+	&__content {
+		max-width: 300px;
+		width: 100%;
+		position: absolute;
+		right: 62px;
+		transform: translateY(300%);
+	}
+
+	&__title {
+		color: $white;
+		font-weight: 400;
+		text-transform: uppercase;
+	}
+
+	&__info {
+		position: absolute;
+		bottom: 40px;
+		right: 40px;
+	}
+}
