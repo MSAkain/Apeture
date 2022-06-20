@@ -45,26 +45,3 @@
 	}
 
 }
-
-.button {
-	position: relative;
-	max-width: 143px;
-	width: 100%;
-	color: $black;
-	background-color: $white;
-	border-radius: 14px;
-	padding: 9px 10px 13px 42px;
-	font-size: 15px;
-	letter-spacing: 0.4px;
-
-	&::before {
-		content: '';
-		position: absolute;
-		background-color: $black;
-		width: 32px;
-		height: 32px;
-		border-radius: 38%;
-		left: 4px;
-		bottom: 6px;
-	}
-}

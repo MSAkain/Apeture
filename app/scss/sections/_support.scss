@@ -1,0 +1,19 @@
+.support {
+	text-align: center;
+	padding-top: 112px;
+	padding-bottom: 210px;
+
+	&__content {
+		max-width: 571px;
+		margin: 0 auto;
+	}
+
+	&__title {
+		margin-bottom: 15px;
+	}
+
+	&__text {
+		font-size: 24px;
+		margin-bottom: 22px;
+	}
+}
